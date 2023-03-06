@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="../src/js/App.js" type="module" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>Note App</title>
+</head>
+<body>
+    <div class="notes" id="app">
+        <div class="notes__header">
+          <h2 class="header__title">Notes</h2>
+          <div class="notes__search-bar">
+          <input
+          type="search"
+          class="search-bar"
+          placeholder="search by keyword..."1
+        />
+          </div>
+          <div class="header__options">
+            <span class="option option__search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <span class="option option__theme dark"
+              ><i class="fa-regular fa-sun"></i
+            ></span>
+          </div>
+        </div>
+        <div class="notes__empty">
+          <img
+            src="/assets/images/Notebook-rafiki (1).png"
+            alt=""
+            class="empty__image"
+          />
+          <p class="empty__text">Create your first note!</p>
+        </div>
+        <div class="notes__list">
+          <ul class="note__list-items">
+            
+          </ul>
+        </div>
+        <aside class="notes__new-note">
+          <span class="new__note-icon"><i class="fa-solid fa-plus"></i></span>
+        </aside>
+        <section class="preview" style="display:none;">
+        <aside class="note__preview">
+       
+        </aside>
+        </section>
+        <div class="notes__create">
+          <div class="create__header">
+            <span class="option note__back"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></span>
+            <div class="create__functions">
+              <span class="option note__view"
+                ><i class="fa-solid fa-eye"></i
+              ></span>
+              <span class="option note__save" id="note__edit"
+                ><i class="save-edit fa-solid fa-floppy-disk"></i
+              ></span>
+            </div>
+          </div>
+          <div class="notes__form" >
+          <form class="main-form">
+            <input
+              type="text"
+              class="form-input note__title"   
+              placeholder="Title"
+            />
+          <textarea rows="8" class="form-input note__body" placeholder="type something..."></textarea>
+        </form>
+          </div>
+          <section class="preview preview-save" style=display:none;>
+          <div class="notes__create-save ">
+            <span class="save-logo"
+              ><i class="fa-solid fa-circle-exclamation"></i
+            ></span>
+            <h3 class="save-alert">Save changes ?</h3>
+            <div class="save-options">
+              <button class="btn discard-btn">Discard</button
+              ><button class="btn save-btn">Save</button>
+            </div>
+          </div>
+          </section>
+        </div>
+        <div class="notes__edit">
+          <div class="edit__header">
+            <span class="option edit-note__back"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></span>
+            <div class="create__functions">
+              <span class="option note__view"
+                ><i class="fa-solid fa-eye"></i
+              ></span>
+              <span class="option edit__save" 
+                ><i class="fa-solid fa-check"></i
+              ></span>
+            </div>
+          </div>
+          <div class="notes__form" >
+          <!-- <form class="main-form">
+            <input
+              type="text"
+              class="form-input edit-note__title" maxlength="20"  
+              placeholder="Title"
+            />
+          <textarea rows="8" class="form-input edit-note__body" placeholder="type something..."></textarea>
+        </form> -->
+          </div>
+          <section class="preview preview-edit" style=display:none;>
+          <div class="notes__edit-save ">
+            <span class="save-logo"
+              ><i class="fa-solid fa-circle-exclamation"></i
+            ></span>
+            <h3 class="save-alert">Edit Note?</h3>
+            <div class="save-options">
+              <button class="btn edit-discard-btn">Discard</button
+              ><button class="btn edit-save-btn">Save</button>
+            </div>
+          </div>
+          </section>
+        </div>
+      </div>
+</body>
+</html>
