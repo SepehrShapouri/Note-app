@@ -405,7 +405,7 @@ right: 15px;
     right: 230px;
   }
 }
-.mello{
-  display: flex;
+.bello{
+  display: grid;
   background-color: red;
 }
