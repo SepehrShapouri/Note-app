@@ -405,7 +405,6 @@ right: 15px;
     right: 230px;
   }
 }
-.bello{
-  display: grid;
-  background-color: red;
-}
+.mello{
+  display:flex;
+  background-color: #fff;
