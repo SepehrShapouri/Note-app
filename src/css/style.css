@@ -405,3 +405,7 @@ right: 15px;
     right: 230px;
   }
 }
+.mello{
+  display:flex;
+  background-color: #fff;
+}
