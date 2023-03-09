@@ -406,6 +406,5 @@ right: 15px;
   }
 }
 .mello{
-  display: flex;
-  background-color: red;
-}
+  display:flex;
+  background-color: #fff;
